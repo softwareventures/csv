@@ -104,7 +104,7 @@ function regexEscape(text: string): string {
     return text.replace(/[\\\^$*+?.()|{}\[\]]/g, c => "\\"+ c);
 }
 
-export function write(table: string[][], configuration?: Configuration): string {
+export function write(table: ReadonlyArray<ReadonlyArray<string>>, configuration?: Configuration): string {
     let separator = configuration && configuration.separator || defaultSeparator;
     let quote = configuration && configuration.quote || defaultQuote;
 
