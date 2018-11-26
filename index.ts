@@ -1,3 +1,4 @@
+import {map} from "@softwareventures/array";
 import {ReadonlyTable} from "@softwareventures/table";
 
 type ParseState = "none" | "after-comma" | "in-linebreak" | "in-quote" | "after-quote";
@@ -72,7 +73,7 @@ export function parse(data: string, configuration?: Configuration): ReadonlyTabl
     const separator = configuration && configuration.separator || defaultSeparator;
     const quote = configuration && configuration.quote || defaultQuote;
 
-    const resultState = data.split("")
+    const resultState = String(data).split("")
         .reduce((data: ParseData, char: string) => {
             if (data.state === "after-comma" && char === " ") {
                 return data;
@@ -112,9 +113,8 @@ export function write(table: ReadonlyTable, configuration?: Configuration): stri
 
     const quoteRegex = new RegExp(regexEscape(quote), "g");
 
-    return table
-        .map(row => row
-            .map(field => quote + field.replace(quoteRegex, quote + quote) + quote)
+    return map(table,
+        row => map(row, field => quote + field.replace(quoteRegex, quote + quote) + quote)
             .join(separator))
         .join("\r\n");
 }
