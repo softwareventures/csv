@@ -10,7 +10,7 @@ interface ParseData {
     readonly field: string;
 }
 
-function changeState(parseData: ParseData, state: ParseState): Readonly<ParseData> {
+function changeState(parseData: ParseData, state: ParseState): ParseData {
     return {
         state,
         result: parseData.result,
@@ -19,7 +19,7 @@ function changeState(parseData: ParseData, state: ParseState): Readonly<ParseDat
     };
 }
 
-function appendText(parseData: ParseData, text: string): Readonly<ParseData> {
+function appendText(parseData: ParseData, text: string): ParseData {
     return {
         state: parseData.state,
         result: parseData.result,
@@ -28,7 +28,7 @@ function appendText(parseData: ParseData, text: string): Readonly<ParseData> {
     };
 }
 
-function endField(parseData: ParseData): Readonly<ParseData> {
+function endField(parseData: ParseData): ParseData {
     return {
         state: parseData.state,
         result: parseData.result,
