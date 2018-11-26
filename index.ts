@@ -1,6 +1,6 @@
 import {ReadonlyTable} from "@softwareventures/table";
 
-type ParseState = "None" | "AfterComma" | "InLineBreak" | "InQuote" | "AfterQuote";
+type ParseState = "none" | "after-comma" | "in-linebreak" | "in-quote" | "after-quote";
 
 interface ParseData {
     readonly state: ParseState;
@@ -62,7 +62,7 @@ const defaultSeparator = ",";
 const defaultQuote = '"';
 
 const initial: ParseData = {
-    state: "None",
+    state: "none",
     result: [],
     record: [],
     field: ""
@@ -74,28 +74,28 @@ export function parse(data: string, configuration?: Configuration): ReadonlyTabl
 
     const resultState = data.split("")
         .reduce((data: ParseData, char: string) => {
-            if (data.state === "AfterComma" && char === " ") {
+            if (data.state === "after-comma" && char === " ") {
                 return data;
-            } else if (data.state === "InLineBreak" && char === "\n") {
-                return changeState(data, "None");
-            } else if (data.state === "AfterQuote" && char === quote) {
-                return changeState(appendText(data, quote), "InQuote");
-            } else if (data.state === "InQuote") {
+            } else if (data.state === "in-linebreak" && char === "\n") {
+                return changeState(data, "none");
+            } else if (data.state === "after-quote" && char === quote) {
+                return changeState(appendText(data, quote), "in-quote");
+            } else if (data.state === "in-quote") {
                 if (char === quote) {
-                    return changeState(data, "AfterQuote");
+                    return changeState(data, "after-quote");
                 } else {
                     return appendText(data, char);
                 }
             } else if (char === separator) {
-                return changeState(endField(data), "AfterComma");
+                return changeState(endField(data), "after-comma");
             } else if (char === "\r") {
-                return changeState(endRecord(data), "InLineBreak");
+                return changeState(endRecord(data), "in-linebreak");
             } else if (char === "\n") {
-                return changeState(endRecord(data), "None");
+                return changeState(endRecord(data), "none");
             } else if (char === quote) {
-                return changeState(data, "InQuote");
+                return changeState(data, "in-quote");
             } else {
-                return changeState(appendText(data, char), "None");
+                return changeState(appendText(data, char), "none");
             }
         }, initial);
 
