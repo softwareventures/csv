@@ -8,39 +8,39 @@ interface ParseData {
 }
 
 function changeState(parseData: ParseData, state: ParseState): Readonly<ParseData> {
-    return Object.freeze<ParseData>({
+    return {
         state,
         result: parseData.result,
         record: parseData.record,
         field: parseData.field
-    });
+    };
 }
 
 function appendText(parseData: ParseData, text: string): Readonly<ParseData> {
-    return Object.freeze<ParseData>({
+    return {
         state: parseData.state,
         result: parseData.result,
         record: parseData.record,
         field: parseData.field + text
-    });
+    };
 }
 
 function endField(parseData: ParseData): Readonly<ParseData> {
-    return Object.freeze<ParseData>({
+    return {
         state: parseData.state,
         result: parseData.result,
-        record: Object.freeze(parseData.record.concat([parseData.field])),
+        record: parseData.record.concat([parseData.field]),
         field: ""
-    });
+    };
 }
 
 function endRecord(parseData: ParseData): ParseData {
-    return Object.freeze<ParseData>({
+    return {
         state: parseData.state,
-        result: Object.freeze(parseData.result.concat([parseData.record.concat([parseData.field])])),
+        result: parseData.result.concat([parseData.record.concat([parseData.field])]),
         record: [],
         field: ""
-    });
+    };
 }
 
 function endData(parseData: ParseData): ParseData {
@@ -59,12 +59,12 @@ export interface Configuration {
 const defaultSeparator = ",";
 const defaultQuote = '"';
 
-const initial = Object.freeze<ParseData>({
+const initial: ParseData = {
     state: "None",
     result: [],
     record: [],
     field: ""
-});
+};
 
 export function parse(data: string, configuration?: Configuration): ReadonlyArray<ReadonlyArray<string>> {
     const separator = configuration && configuration.separator || defaultSeparator;
