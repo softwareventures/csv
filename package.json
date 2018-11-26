@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/softwareventures/csv/issues"
   },
-  "homepage": "https://github.com/softwareventures/csv"
+  "homepage": "https://github.com/softwareventures/csv",
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  }
 }
