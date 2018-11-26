@@ -1,8 +1,10 @@
+import {ReadonlyTable} from "@softwareventures/table";
+
 type ParseState = "None" | "AfterComma" | "InLineBreak" | "InQuote" | "AfterQuote";
 
 interface ParseData {
     readonly state: ParseState;
-    readonly result: ReadonlyArray<ReadonlyArray<string>>;
+    readonly result: ReadonlyTable;
     readonly record: ReadonlyArray<string>;
     readonly field: string;
 }
@@ -66,7 +68,7 @@ const initial: ParseData = {
     field: ""
 };
 
-export function parse(data: string, configuration?: Configuration): ReadonlyArray<ReadonlyArray<string>> {
+export function parse(data: string, configuration?: Configuration): ReadonlyTable {
     const separator = configuration && configuration.separator || defaultSeparator;
     const quote = configuration && configuration.quote || defaultQuote;
 
@@ -104,7 +106,7 @@ function regexEscape(text: string): string {
     return text.replace(/[\\^$*+?.()|{}\[\]]/g, c => "\\" + c);
 }
 
-export function write(table: ReadonlyArray<ReadonlyArray<string>>, configuration?: Configuration): string {
+export function write(table: ReadonlyTable, configuration?: Configuration): string {
     const separator = configuration && configuration.separator || defaultSeparator;
     const quote = configuration && configuration.quote || defaultQuote;
 
