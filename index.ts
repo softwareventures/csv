@@ -101,7 +101,7 @@ export function parse(data: string, configuration?: Configuration): ReadonlyArra
 }
 
 function regexEscape(text: string): string {
-    return text.replace(/[\\\^$*+?.()|{}\[\]]/g, c => "\\" + c);
+    return text.replace(/[\\^$*+?.()|{}\[\]]/g, c => "\\" + c);
 }
 
 export function write(table: ReadonlyArray<ReadonlyArray<string>>, configuration?: Configuration): string {
