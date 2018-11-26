@@ -1,0 +1,17 @@
+{
+  "name": "@softwareventures/csv",
+  "version": "0.0.0",
+  "description": "Parser and serializer for CSV and related formats",
+  "repository": "github:/softwareventures/csv",
+  "keywords": [
+    "csv",
+    "tsv",
+    "TypeScript"
+  ],
+  "author": "Daniel Cassidy <mail@danielcassidy.me.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/softwareventures/csv/issues"
+  },
+  "homepage": "https://github.com/softwareventures/csv"
+}
