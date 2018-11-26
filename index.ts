@@ -1,5 +1,6 @@
 import {map} from "@softwareventures/array";
 import {ReadonlyTable} from "@softwareventures/table";
+import regexEscape = require("escape-string-regexp");
 
 type ParseState = "none" | "after-comma" | "in-linebreak" | "in-quote" | "after-quote";
 
@@ -111,10 +112,6 @@ export function parse(data: string, configuration?: Configuration): ReadonlyTabl
         }, initial);
 
     return endData(resultState).result;
-}
-
-function regexEscape(text: string): string {
-    return text.replace(/[\\^$*+?.()|{}\[\]]/g, c => "\\" + c);
 }
 
 export function write(table: ReadonlyTable, configuration?: Configuration): string {
