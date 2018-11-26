@@ -62,6 +62,16 @@ export interface Configuration {
 const defaultSeparator = ",";
 const defaultQuote = '"';
 
+export const csv: Configuration = {
+    separator: defaultSeparator,
+    quote: defaultQuote
+};
+
+export const tsv: Configuration = {
+    separator: "\t",
+    quote: defaultQuote
+};
+
 const initial: ParseData = {
     state: "none",
     result: [],
