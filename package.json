@@ -20,6 +20,7 @@
   },
   "sideEffects": false,
   "devDependencies": {
+    "@softwareventures/tsconfig": "^1.0.0",
     "@softwareventures/tslint-rules": "^0.6.2",
     "tslint": "^5.12.0",
     "typescript": "^3.2.2"
