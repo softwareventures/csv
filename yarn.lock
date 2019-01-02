@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@softwareventures/array@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.1.1.tgz#682c6bbf3d4b8cd5fa5df2f37b0312574a7b127e"
-  integrity sha512-qQMXh1TfpjVaiq3tBu/3ZA3JnHEDEDN5/nXoL54DCLEOc8TC9dBqZVS9qTxPxkJVdPTIeGpzZTTdhIdhalhJnQ==
+"@softwareventures/array@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.1.2.tgz#477abd54e1e41b0edd835b3f56a6ca0e1ec1acc4"
+  integrity sha512-MKdcX6iEkLkGTz4VuD6nITrUpaL16hDWC36MQ30Niu2jA2ipBgpJ6WGQWPq0Tda0E0GqcaazoGO/k1VR9UTjKQ==
   dependencies:
     "@softwareventures/ordered" "^0.1.1"
     dictionary-types "^1.0.0"
@@ -16,10 +16,10 @@
   resolved "https://registry.yarnpkg.com/@softwareventures/ordered/-/ordered-0.1.1.tgz#cda16ec6fe47780c5a482987808cd411fde3ed33"
   integrity sha512-lONtNhDw6cZqyHC6HwjA8IT10/9aYjxldINRKR4OGwp1/DKp6fGoq2q4aCmC3zuELwgtj5i04cOubLy1CJxLHQ==
 
-"@softwareventures/table@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/table/-/table-0.1.1.tgz#50c928d6876e9d17ffcb031aea0f664a102d155a"
-  integrity sha512-wTfWQpqXDfGGysMAgjiqhTKMaTfDOPYrQWFDBEUj0JJqrqeOyGSWp5k12vrCzlTC8ePxxFLHQdAAK58rl18MTg==
+"@softwareventures/table@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@softwareventures/table/-/table-0.1.2.tgz#ef88fd9bb4219420233a445915422a4db717a370"
+  integrity sha512-6vGzhAyA9DpvHghQisHL8AjX+FziEvvqixk7nbllhSz8AiLbo8EbWcr2CgGT8YexLPaoIn8GUdMvWsd5MVWoiQ==
   dependencies:
     dictionary-types "^1.0.0"
     tslib "^1.9.3"
