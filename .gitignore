@@ -2,7 +2,7 @@
 /.idea/tasks.xml
 /node_modules
 yarn-error.log
-npm-debug.log
+npm-debug.log*
 *.js
 *.d.ts
 *.js.map
