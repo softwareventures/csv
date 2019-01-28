@@ -1,6 +1,7 @@
 /.idea
 /tsconfig.json
 /tslint.json
+/yarn.lock
 /.travis.yml
 *.ts
 !*.d.ts
