@@ -1,6 +1,6 @@
 {
   "name": "@softwareventures/csv",
-  "version": "0.1.4",
+  "version": "0.0.0-development",
   "description": "Parser and serializer for CSV and related formats",
   "repository": "github:softwareventures/csv",
   "keywords": [
@@ -16,13 +16,15 @@
   "homepage": "https://github.com/softwareventures/csv",
   "scripts": {
     "prepare": "tslint --project . && tsc",
-    "test": "echo No tests yet"
+    "test": "echo No tests yet",
+    "semantic-release": "semantic-release"
   },
   "sideEffects": false,
   "devDependencies": {
     "@softwareventures/tsconfig": "1.0.0",
     "@softwareventures/tslint-rules": "0.6.4",
     "cz-conventional-changelog": "2.1.0",
+    "semantic-release": "15.13.3",
     "tslint": "5.12.1",
     "typescript": "3.2.4"
   },
