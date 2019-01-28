@@ -1,6 +1,6 @@
 {
   "name": "@softwareventures/csv",
-  "version": "0.0.0-development",
+  "version": "0.1.5-development",
   "description": "Parser and serializer for CSV and related formats",
   "repository": "github:softwareventures/csv",
   "keywords": [
