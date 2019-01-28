@@ -4,5 +4,7 @@
 /yarn.lock
 /.travis.yml
 /renovate.json
+yarn-error.log
+npm-debug.log*
 *.ts
 !*.d.ts
