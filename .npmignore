@@ -3,5 +3,6 @@
 /tslint.json
 /yarn.lock
 /.travis.yml
+/renovate.json
 *.ts
 !*.d.ts
