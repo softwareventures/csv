@@ -32,7 +32,7 @@
     "@softwareventures/array": "^0.1.2",
     "@softwareventures/table": "^0.1.2",
     "@types/escape-string-regexp": "^1.0.0",
-    "escape-string-regexp": "^1.0.5",
+    "escape-string-regexp": "^2.0.0",
     "tslib": "^1.9.3"
   },
   "config": {
