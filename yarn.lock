@@ -139,9 +139,9 @@
     lodash "^4.17.4"
 
 "@softwareventures/array@^0.10.0":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.10.1.tgz#cf6956de9db4c56e5a93ba9157a0bb6ed9dc869a"
-  integrity sha512-ZDeLfTaYFyTxYoivJb3OWyRVLF8l6sfdOZeW0AJvviDmBG+ftGvYkyWCR2cGIIU7QXdRhylkoqTGBkwu7yagWw==
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.10.3.tgz#5cf80561878aeb1ac930ea30d2e8d44d3593fea4"
+  integrity sha512-KspC/g0M1TDE4YXcOH+Pt0XN/Y7smd3AhZ7LojBEJR5FxLCw9TCkLo3uIO8YgqkFZh/zl8Q9FYdDzAmZCu8eIQ==
   dependencies:
     "@softwareventures/ordered" "^0.2.0"
     dictionary-types "^1.0.0"
