@@ -138,10 +138,10 @@
     into-stream "^4.0.0"
     lodash "^4.17.4"
 
-"@softwareventures/array@^0.11.0":
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.11.1.tgz#a5e3aea1ab7b246b9f80bc0f889190fac76a2450"
-  integrity sha512-PJvpAK8Q1Fv4LzZf/7VJ7WEhaWLFHJETCsaDpJadHDqs/o0ALGfjG9r182AvkBqs0OBEWP3q2s/MfwyBpXhr6Q==
+"@softwareventures/array@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.14.0.tgz#df6309230bf37910110879684cc985fe729d9de2"
+  integrity sha512-W/1KMNzjkZOjEdWcdOZcFrO0JYcNx+FxvkibaBLA2ZqOEknzTPLTsLoNWd/CfjSJqTX3GJsbBtnNXEvjpspS7A==
   dependencies:
     "@softwareventures/ordered" "^0.2.0"
     dictionary-types "^1.0.0"
