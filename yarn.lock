@@ -155,9 +155,9 @@
     tslib "^1.9.3"
 
 "@softwareventures/table@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@softwareventures/table/-/table-0.1.2.tgz#ef88fd9bb4219420233a445915422a4db717a370"
-  integrity sha512-6vGzhAyA9DpvHghQisHL8AjX+FziEvvqixk7nbllhSz8AiLbo8EbWcr2CgGT8YexLPaoIn8GUdMvWsd5MVWoiQ==
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@softwareventures/table/-/table-0.1.3.tgz#4588389aa2a33f1e23bbc67219482b5b7095f0ff"
+  integrity sha512-UWmIs6T05j0hYIi/GvMHgCLOmUh7HePDOIgoBuMXBcZLiNNiMASQOV2OE3HWg9o5mnhFX+VTWUEt5Z4PzLx0RA==
   dependencies:
     dictionary-types "^1.0.0"
     tslib "^1.9.3"
