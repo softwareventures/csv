@@ -168,9 +168,9 @@
     lodash "^4.17.4"
 
 "@softwareventures/array@^0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.16.0.tgz#ef9b69aadb74ce1ac1ac92813950a7cf91ed91dc"
-  integrity sha512-cdsDUHgWRzUzwu5vBTYn/+tH9Ztdaey6evAK8ch1nXFI6jEK975RNzkgVUrJi9osqK1NsQ94125J33Yd9sZz+Q==
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.16.1.tgz#f042925e29bcb9b8425ad578c0686b0b4c73dca1"
+  integrity sha512-NZV6AqYhTfDL0+zCIInwNZT2jFsCP/QVjGXpn15RGRcfLivkst9fnZ0t99+0XNl4JUXqrMwz5mto5OfCaAeURw==
   dependencies:
     "@softwareventures/ordered" "^0.2.0"
     dictionary-types "^1.0.0"
