@@ -246,10 +246,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@softwareventures/array@^0.19.0":
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.19.1.tgz#558179e60df24c036b718605cb03cc897a9292c7"
-  integrity sha512-MOU/CDR5Yq1Xo1O1d7zEYu7lOHEYiaL+aSVujVzwIiTFBQs8p+dxJ9dItFlavEk+V/90+idPebzvhFHQwSGaTQ==
+"@softwareventures/array@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.20.0.tgz#0a18829805c49701eafbf391069557de74ab96c1"
+  integrity sha512-yxfSI49S6sCysk2bI+T+rl1BOrWRao65OHP11rsCjM5H5csFGAOehqjg2Y+PCepAcYoki032Gwe/XatpaGKkwQ==
   dependencies:
     "@softwareventures/ordered" "^0.2.0"
     dictionary-types "1.1.0"
