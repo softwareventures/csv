@@ -29,7 +29,7 @@
     "typescript": "3.8.3"
   },
   "dependencies": {
-    "@softwareventures/array": "^0.20.0",
+    "@softwareventures/array": "^0.21.0",
     "@softwareventures/table": "^0.1.2",
     "escape-string-regexp": "^2.0.0",
     "tslib": "^1.9.3"
