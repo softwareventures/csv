@@ -22,7 +22,7 @@
   "sideEffects": false,
   "dependencies": {
     "@softwareventures/array": "^0.31.0 || ^0.33.0 || ^3.0.0",
-    "@softwareventures/table": "^0.1.2",
+    "@softwareventures/table": "^0.1.2 || ^1.0.0",
     "escape-string-regexp": "^4.0.0",
     "tslib": "^1.9.3 || ^2.0.0"
   },
