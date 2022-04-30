@@ -15,6 +15,7 @@
   "repository": "github:softwareventures/csv",
   "license": "ISC",
   "scripts": {
+    "lint": "tsc --noEmit && tslint --project .",
     "prepare": "tslint --project . && tsc",
     "semantic-release": "semantic-release",
     "test": "echo No tests yet"
