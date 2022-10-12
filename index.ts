@@ -1,5 +1,5 @@
 import {map} from "@softwareventures/array";
-import {ReadonlyTable} from "@softwareventures/table";
+import type {ReadonlyTable} from "@softwareventures/table";
 import regexEscape = require("escape-string-regexp");
 
 type ParseState = "none" | "after-comma" | "in-linebreak" | "in-quote" | "after-quote";
@@ -7,7 +7,7 @@ type ParseState = "none" | "after-comma" | "in-linebreak" | "in-quote" | "after-
 interface ParseData {
     readonly state: ParseState;
     readonly result: ReadonlyTable;
-    readonly record: ReadonlyArray<string>;
+    readonly record: readonly string[];
     readonly field: string;
 }
 
@@ -81,10 +81,11 @@ const initial: ParseData = {
 };
 
 export function parse(data: string, configuration?: Configuration): ReadonlyTable {
-    const separator = configuration && configuration.separator || defaultSeparator;
-    const quote = configuration && configuration.quote || defaultQuote;
+    const separator = configuration?.separator ?? defaultSeparator;
+    const quote = configuration?.quote ?? defaultQuote;
 
-    const resultState = String(data).split("")
+    const resultState = String(data)
+        .split("")
         .reduce((data: ParseData, char: string) => {
             if (data.state === "after-comma" && char === " ") {
                 return data;
@@ -115,10 +116,10 @@ export function parse(data: string, configuration?: Configuration): ReadonlyTabl
 }
 
 export function write(table: ReadonlyTable, configuration?: Configuration): string {
-    const separator = configuration && configuration.separator || defaultSeparator;
-    const quote = configuration && configuration.quote || defaultQuote;
+    const separator = configuration?.separator ?? defaultSeparator;
+    const quote = configuration?.quote ?? defaultQuote;
 
-    const quoteRegex = new RegExp(regexEscape(quote), "g");
+    const quoteRegex = new RegExp(regexEscape(quote), "gu");
 
     return map(table,
         row => map(row, field => quote + field.replace(quoteRegex, quote + quote) + quote)
