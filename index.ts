@@ -121,8 +121,7 @@ export function write(table: ReadonlyTable, configuration?: Configuration): stri
 
     const quoteRegex = new RegExp(regexEscape(quote), "gu");
 
-    return map(table,
-        row => map(row, field => quote + field.replace(quoteRegex, quote + quote) + quote)
-            .join(separator))
-        .join("\r\n");
+    return map(table, row =>
+        map(row, field => quote + field.replace(quoteRegex, quote + quote) + quote).join(separator)
+    ).join("\r\n");
 }
