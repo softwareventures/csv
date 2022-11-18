@@ -528,6 +528,13 @@
   dependencies:
     tslib "2.3.0"
 
+"@softwareventures/nullable@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/nullable/-/nullable-3.0.0.tgz#979045c99e7c8a9055cb25c3c5cb5b9edfc50085"
+  integrity sha512-kgYOGJHzgZl0QGqMqbRe34i5VaRQUsG+X9AcblJL1lGDq+npLsCS974VSJmOBxnSqIQ5dcgah+zBxHndH8qzfg==
+  dependencies:
+    tslib "2.4.0"
+
 "@softwareventures/ordered@^0.2.0 || ^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@softwareventures/ordered/-/ordered-1.0.0.tgz#d803eef43bb0b4ccfcd78d2928fe38b5109ad99e"
@@ -550,12 +557,12 @@
     conventional-changelog-conventionalcommits "^4.6.3 || ^5.0.0"
     tslib "2.4.0"
 
-"@softwareventures/table@^0.1.2 || ^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/table/-/table-1.0.1.tgz#6db036c9a947da3d485c74113c97b0512d5e6a04"
-  integrity sha512-SL2J1rNZOuURa+6sSjuNrO5wEqGiYScCYfisJFX/6GRvS7qTlUdafONSLPUy1/961Zef80/ofWIVbKDZTaUYrg==
+"@softwareventures/table@^0.1.2 || ^1.0.0 || ^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@softwareventures/table/-/table-2.0.1.tgz#285b2aada1fed2c11595077d63e53cfa03b83235"
+  integrity sha512-f2kz4V+nOrlw+7lTCMeaT71RNhKmWW26yy0AaKOORtoA5KuHD0EjygpFcbnt13nXfz5fMWE+MSeT0vU1JLd9MQ==
   dependencies:
-    dictionary-types "^1.0.0 || ^2.0.0"
+    "@softwareventures/nullable" "^3.0.0"
     tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
 
 "@softwareventures/tsconfig@6.0.0":
@@ -1538,11 +1545,6 @@ dezalgo@^1.0.0:
   dependencies:
     asap "^2.0.0"
     wrappy "1"
-
-"dictionary-types@^1.0.0 || ^2.0.0":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/dictionary-types/-/dictionary-types-2.0.1.tgz#9f0b9b4bcde6237e241bcd7ea1d255be450f6e22"
-  integrity sha512-oGwLOZSgaS8JDIbe42MCTZ+/IUFLaSxfZ1agSwCojz+9K2MxnnAY/YPoKTGHawxnLKCHHN2bQDrP271Glpf7jA==
 
 diff@^4.0.1:
   version "4.0.2"
