@@ -505,13 +505,13 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@softwareventures/array@^0.31.0 || ^0.33.0 || ^3.0.0 || ^4.0.0 || ^5.0.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-5.2.0.tgz#235a8427378b84f18031a09ede0142d6ec6a8e67"
-  integrity sha512-vVleJME+wOObPdbgYLYwiVN3VV48gzA6I86fOzpNwjk1rFtVtEttVO9lUcGUrXoNaFwYNM+I9VfLaLqaiKdbxA==
+"@softwareventures/array@^0.31.0 || ^0.33.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-6.0.0.tgz#5a1b4fbed347cfc3d8715b08c7a0f356d75cd682"
+  integrity sha512-Bw85yU0TI0TuMyskftAsSgqiygQq97k6Ukorj2TTvMvYuDpC7HEKxrijtOz2I8yKqU/K9ONQPyChS1ZP+V002g==
   dependencies:
-    "@softwareventures/nullable" "^1.0.0 || ^1.0.0 || ^1.2.1 || ^2.0.0"
-    "@softwareventures/ordered" "^0.2.0 || ^1.0.0"
+    "@softwareventures/nullable" "^1.0.0 || ^2.0.0"
+    "@softwareventures/ordered" "^1.1.0"
     tslib "^2.0.0"
 
 "@softwareventures/eslint-config@7.0.1":
@@ -521,7 +521,7 @@
   dependencies:
     tslib "^2.3.1"
 
-"@softwareventures/nullable@^1.0.0 || ^1.0.0 || ^1.2.1 || ^2.0.0":
+"@softwareventures/nullable@^1.0.0 || ^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@softwareventures/nullable/-/nullable-2.0.0.tgz#d11498c5fe71bb0b94ba85a40e774c19c721c5d3"
   integrity sha512-zx+FMgB4MqmqIiCglgP8GZIYPw57yFBuz/jh0kXNAoEtSRl3LkwhaGG0b/y5yae2RsYSaVkNotQaSmJRt5GahA==
@@ -535,10 +535,10 @@
   dependencies:
     tslib "2.4.0"
 
-"@softwareventures/ordered@^0.2.0 || ^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/ordered/-/ordered-1.0.0.tgz#d803eef43bb0b4ccfcd78d2928fe38b5109ad99e"
-  integrity sha512-SUFUYDWEPAS54LpGH+mRHwkGuTINPDt4OOS3h/Zr9f12JPFz2cqh6Xxwg75BZqwaeONuUwmklJVMRmgvxSSkPA==
+"@softwareventures/ordered@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/ordered/-/ordered-1.1.0.tgz#5bd8929574d309738f6bcccaa017557979a4e303"
+  integrity sha512-XkoiEiTiLhDnDHYKmDobtoNlqYEmK/LK/FOeKzfIOB8Xfl9+Q6toDxSasB+T6coOZiJ0GA23XFsSkh0grC2Nng==
   dependencies:
     tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
 
