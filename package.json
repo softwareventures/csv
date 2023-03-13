@@ -38,8 +38,8 @@
   "devDependencies": {
     "@softwareventures/semantic-release-config": "3.1.0",
     "@softwareventures/tsconfig": "7.0.0",
-    "@typescript-eslint/eslint-plugin": "5.54.1",
-    "@typescript-eslint/parser": "5.54.1",
+    "@typescript-eslint/eslint-plugin": "5.55.0",
+    "@typescript-eslint/parser": "5.55.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint-config-prettier": "8.7.0",
     "eslint-plugin-import": "2.27.5",
